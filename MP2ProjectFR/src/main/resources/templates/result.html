@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>The Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="text-center">Result</h1>
+    <p class="lead" th:text="'Name: ' + ${form.id}" />
+    <p class="lead" th:text="'Message: ' + ${form.content}" />
+    <p class="lead" th:text="'Sentiment: ' + ${sentiment}" /> <!-- Display the sentiment result here -->
+    <a href="/form" class="btn btn-primary">Submit another message</a>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
